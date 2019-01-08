@@ -1,0 +1,56 @@
+@font-face {
+    font-family: Apercu;
+    src: url(https://github.com/scazan/ACN_responsive/blob/master/fonts/apercu-regular-webfont.ttf?raw=true);
+  }
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Apercu;
+}
+
+.not-selectable {
+    -webkit-user-select: none;        
+    -moz-user-select: none;
+    -ms-user-select: none; 
+    user-select: none;
+    pointer-events: none;
+}
+
+.parallax-content {
+    min-height:70vh;
+    color:white;
+    padding:2em 1rem;
+}
+
+.parallax-content p {
+    font-size:1.5em;
+    text-align:center;
+}
+
+.parallax-content .btn {
+    width:100px;
+    /*margin:auto;*/
+}
+
+.parallax-content h1 {
+    font-family: Apercu, "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+    font-size:50px;
+    color:white;
+    margin:0px;
+    text-align:center;
+    display:table-cell;
+    vertical-align:middle;
+}
+
+#container360 {
+    margin-right: 1.1em;
+}
+
+@media only screen and (max-width: 900px) {
+    #container360 {
+        margin-right: 0em;
+    }
+}
