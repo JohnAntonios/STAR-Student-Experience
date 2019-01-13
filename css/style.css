@@ -27,43 +27,27 @@ body {
     pointer-events: auto;
 }
 
-.parallax-content {
+.hero-content {
     color:white;
     min-height: 70vh;
 }
 
-#container360 {
-    margin-right: 1.1em;
-    margin-bottom: 0;
-    position: fixed;
-    top: 0px;
-
+.hero-content p {
+    font-size: 1.5em;
+    text-align: center;
 }
 
-.parallax-content p {
-    font-size:1.5em;
-    text-align:center;
-}
-
-
-.parallax-content h1 {
+.hero-content h1 {
     font-family: Apercu, "Helvetica Neue", "Helvetica", "Arial", sans-serif;
-    font-size:50px;
-    color:white;
-    margin:0px;
-    text-align:center;
-    display:table-cell;
-    vertical-align:middle;
+    font-size: 50px;
+    color: white;
+    margin: 0px;
+    text-align: center;
+    display: table-cell;
+    vertical-align: middle;
 }
 
-
-@media only screen and (max-width: 900px) {
-    #container360 {
-        margin-right: 0em;
-    }
-}
-
-.btn-usyd{
+.btn-usyd {
     color: #FFFFFF;
     background-color:#e64626;
     border-color: #e64626;
@@ -71,4 +55,16 @@ body {
 
 .btn-usyd:hover {
     color: #FFFFFF;
+    background-color: #d4482c;
+    border-color: #d4482c;
+    text-decoration: none !important;
+}
+
+#goto-main {
+    text-decoration: none;
+}
+
+.overlay-content {
+    z-index: 1; 
+    position: absolute; 
 }
