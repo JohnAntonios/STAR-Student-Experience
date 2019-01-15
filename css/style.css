@@ -1,6 +1,7 @@
+/* Global */
 @font-face {
     font-family: Apercu;
-    src: url(https://github.com/scazan/ACN_responsive/blob/master/fonts/apercu-regular-webfont.ttf?raw=true);
+    src: local("assets/font/apercu/ApercuRegular.otf")
   }
 
 html {
@@ -11,6 +12,7 @@ body {
     font-family: Apercu;
 }
 
+/* Landing entrance page [index.html] */
 .not-selectable {
     -webkit-user-select: none;        
     -moz-user-select: none;
@@ -25,6 +27,15 @@ body {
     -ms-user-select: auto; 
     user-select: auto;
     pointer-events: auto;
+}
+
+#goto-main {
+    text-decoration: none;
+}
+
+.overlay-content {
+    z-index: 1; 
+    position: absolute; 
 }
 
 .hero-content {
@@ -47,6 +58,7 @@ body {
     vertical-align: middle;
 }
 
+/* BS4 USYD button */
 .btn-usyd {
     color: #FFFFFF;
     background-color:#e64626;
@@ -58,13 +70,4 @@ body {
     background-color: #d4482c;
     border-color: #d4482c;
     text-decoration: none !important;
-}
-
-#goto-main {
-    text-decoration: none;
-}
-
-.overlay-content {
-    z-index: 1; 
-    position: absolute; 
 }
