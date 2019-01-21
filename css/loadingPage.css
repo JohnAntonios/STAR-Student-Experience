@@ -1,0 +1,27 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+@keyframes moveInTop {
+    from {
+        height: 0vh;
+    }
+
+    to {
+        height: 50vh;
+    }
+}
+
+#top-half {
+    width: 100%;
+    background-color: red;
+    height: 0vh;
+    transition: height 50vh;
+}
+
+#bottom-half {
+    width: 100%;
+    height: 50vh;
+    background-color: blue;
+}
