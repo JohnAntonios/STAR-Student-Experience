@@ -71,3 +71,10 @@ body {
     border-color: #d4482c;
     text-decoration: none !important;
 }
+
+/* Placeholder banner */
+.placeholder-banner {
+    border-color: black;
+    border-style: solid;
+    border-width: 1px;
+}
