@@ -18,30 +18,33 @@
 <body>
     <div class="container-fluid">
         <div class="row">
-            <div class="col-md-12">
-                <h1 class="text-center">Episode One: Preparation</h1>
+            <div class="col-md-12" id="ep-1">
+                <div class="placeholder-banner" style="height: 200px;">
+                    <h1 class="text-center mx-auto">Step One: Preparation</h1>
+                </div>
                 <p>You've just enrolled into the University of Sydney, congratulations!</p>
                 <p>Let's get started by packing the necessities for your journey.</p>
 
                 <div id="pack-carousel">
                     <br>
                     <p>Insert 3D interactive packing carousel here.</p>
-                    
+
                     <ul id="gen-items">
                         <li>Electronic Devices</li>
-                            <ul>
-                                <li>Laptop</li>
-                                <li>Mobile Phone</li>
-                            </ul>
+                        <ul>
+                            <li>Laptop</li>
+                            <li>Mobile Phone</li>
+                        </ul>
                         <li>Travel Adaptors</li>
-                            <p>
-                                Make sure you have Australian travel adaptors so your devices can charge.
-                            </p>
+                        <p>
+                            Make sure you have Australian travel adaptors so your devices can charge.
+
+                        </p>
                         <li>Documentation</li>
-                            <ul>
-                                <li>University enrolment papers</li>
-                                <li>Passport & Visa</li>
-                            </ul>
+                        <ul>
+                            <li>University enrolment papers</li>
+                            <li>Passport & Visa</li>
+                        </ul>
                         <li>Flight Ticket</li>
                         <li>Sunscreen</li>
                     </ul>
@@ -61,7 +64,8 @@
                 </div>
                 <br>
                 <p>Now that you've packed everything, let's setup your Australian Bank Account</p>
-                <p> Here is a list of the trusted, international friendly Australian Banks to choose from, the choice is yours!</p>
+                <p> Here is a list of the trusted, international friendly Australian Banks to choose from, the choice
+                    is yours!</p>
 
                 <div id="bank-gallery">
                     <ul id="list-of-banks">
@@ -76,7 +80,8 @@
 
                 <div id="opal-setup">
                     <p>Lastly let's get a head start in setting up your Opal card.</p>
-                    <p>An Opal card allows you to use public stransport such as Trains, Buses and Ferries to travel around Sydney</p>
+                    <p>An Opal card allows you to use public stransport such as Trains, Buses and Ferries to travel
+                        around Sydney</p>
                     <p>Click here to setup your Opal card online! Ready for use, upon entrance to Sydney.</p>
                 </div>
                 <br>
@@ -87,9 +92,18 @@
                     what to bring and what not to bring.
                 </p>
                 <p>Know about the difference in Time Zones and the use of AUD currency.</p>
-            </div> <!--Col-->
-        </div> <!--Row-->
-    </div> <!--Container-->
+
+                <div class="goto-next-section mb-4">
+                    <h3 class="text-center">Well done! You're all set for your journey to Sydney University!</h3>
+                    <br>
+
+                    <button class="mx-auto d-block btn btn-usyd">Continue to next section</button>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
     <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut"
         crossorigin="anonymous"></script>
@@ -100,5 +114,3 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.0.2/TweenMax.min.js"></script>
     <script src="/js/main.js"></script>
 </body>
-
-</html>
