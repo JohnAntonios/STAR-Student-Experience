@@ -63,7 +63,7 @@ body {
     vertical-align: middle;
 }
 
-/* BS4 USYD button */
+/* Bootstrap 4 USYD button */
 .btn-usyd {
     color: #FFFFFF;
     background-color: var(--usyd-orange-colour);
@@ -79,56 +79,4 @@ body {
 
 .btn-usyd:active {
     border: none !important;
-}
-
-/* Placeholder banner for episodes: Parallax scrolling. */
-body .placeholder-banner {
-    position: fixed;
-    z-index: 1;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    background: url("https://www.solodev.com/assets/flexslider/slide3.jpg");
-    background-size: cover;
-    height: 100vh;
-    width: 100vw;
-}
-
-body .placeholder-banner:before {
-    content: '';
-    height: 100%;
-    width: 100%;
-    height: 170vh;
-    width: 100vw;
-    background: rgba(44, 123, 183, 0.5);
-    position: absolute;
-}
-
-body .placeholder-banner h1 {
-    position: relative;
-    z-index: 1;
-    color: white;
-    text-align: center;
-    font-size: 4rem;
-    line-height: 4rem;
-    text-shadow: 0 2px 2px rgba(0, 0, 0, 0.35);
-    max-width: 50rem;
-    margin: 45vh auto 0;
-}
-
-body .content {
-    background: #faf8f8;
-    position: absolute;
-    z-index: 1000;
-    top: 100vh;
-    width: 100%;
-}
-
-/* Footer nav */
-.bottom-nav {
-    height: 60px;
-    width: 100%;
-    background-color: lightseagreen;
-    top: 100vh;
 }
