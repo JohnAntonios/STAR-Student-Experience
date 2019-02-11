@@ -1,3 +1,8 @@
+/* CSS Variables  */
+:root {
+    --usyd-orange-colour: #e64626;
+}
+
 /* Global */
 @font-face {
     font-family: Apercu;
@@ -61,8 +66,8 @@ body {
 /* BS4 USYD button */
 .btn-usyd {
     color: #FFFFFF;
-    background-color:#e64626;
-    border-color: #e64626;
+    background-color: var(--usyd-orange-colour);
+    border-color: var(--usyd-orange-colour);
 }
 
 .btn-usyd:hover {
@@ -70,6 +75,10 @@ body {
     background-color: #d4482c;
     border-color: #d4482c;
     text-decoration: none !important;
+}
+
+.btn-usyd:active {
+    border: none !important;
 }
 
 /* Placeholder banner for episodes: Parallax scrolling. */
@@ -82,7 +91,7 @@ body .placeholder-banner {
     right: 0;
     background: url("https://www.solodev.com/assets/flexslider/slide3.jpg");
     background-size: cover;
-    height: 80vh;
+    height: 100vh;
     width: 100vw;
 }
 
@@ -104,14 +113,22 @@ body .placeholder-banner h1 {
     font-size: 4rem;
     line-height: 4rem;
     text-shadow: 0 2px 2px rgba(0, 0, 0, 0.35);
-    max-width: 25rem;
-    margin: 30vh auto 0;
+    max-width: 50rem;
+    margin: 45vh auto 0;
 }
 
 body .content {
     background: #faf8f8;
     position: absolute;
     z-index: 1000;
-    top: 80vh;
+    top: 100vh;
     width: 100%;
+}
+
+/* Footer nav */
+.bottom-nav {
+    height: 60px;
+    width: 100%;
+    background-color: lightseagreen;
+    top: 100vh;
 }
