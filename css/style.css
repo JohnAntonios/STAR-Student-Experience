@@ -7,29 +7,25 @@
 @font-face {
     font-family: Apercu;
     src: local("assets/font/apercu/ApercuRegular.otf")
-  }
+}
 
 html {
     scroll-behavior: smooth;
 }
 
 body {
-    font-family: Apercu;
+    font-family: Apercu, "Helvetica Neue", "Helvetica", "Arial", sans-serif;
 }
 
 /* Landing entrance page [index.html] */
 .not-selectable {
-    -webkit-user-select: none;        
-    -moz-user-select: none;
-    -ms-user-select: none; 
+    -webkit-user-select: none;-moz-user-select: none;-ms-user-select: none; 
     user-select: none;
     pointer-events: none;
 }
 
 .selectable {
-    -webkit-user-select: auto;        
-    -moz-user-select: auto;
-    -ms-user-select: auto; 
+    -webkit-user-select: auto;-moz-user-select: auto;-ms-user-select: auto; 
     user-select: auto;
     pointer-events: auto;
 }
@@ -54,10 +50,7 @@ body {
 }
 
 .hero-content h1 {
-    font-family: Apercu, "Helvetica Neue", "Helvetica", "Arial", sans-serif;
-    font-size: 50px;
-    color: white;
-    margin: 0px;
+    font-size: 3rem;
     text-align: center;
     display: table-cell;
     vertical-align: middle;
@@ -79,4 +72,20 @@ body {
 
 .btn-usyd:active {
     border: none !important;
+}
+
+/*Scroll magic */
+.parallax-parent {
+    height: 100vh;
+    overflow: hidden;
+}
+
+.parallax-parent > div {
+    height: 200%;
+    position: relative;
+    top: -100%;
+}
+
+.parallax-parent div > h1 {
+    z-index: 10;
 }
