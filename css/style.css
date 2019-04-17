@@ -1,91 +1,109 @@
 /* CSS Variables  */
 :root {
-    --usyd-orange-colour: #e64626;
+	--usyd-orange-colour: #e64626;
 }
 
 /* Global */
 @font-face {
-    font-family: Apercu;
-    src: local("assets/font/apercu/ApercuRegular.otf")
+	font-family: Apercu;
+	src: local("assets/font/apercu/ApercuRegular.otf");
 }
 
 html {
-    scroll-behavior: smooth;
+	scroll-behavior: smooth;
 }
 
 body {
-    font-family: Apercu, "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+	font-family: Apercu, "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+}
+div#mobile-nav {
+	display: none;
+}
+
+/* Responsive nav media query */
+@media (max-width: 768px) {
+	div#desktop-nav {
+		display: none;
+	}
+	div#mobile-nav {
+		display: inline-block;
+		
+	}
 }
 
 /* Landing entrance page [index.html] */
 .not-selectable {
-    -webkit-user-select: none;-moz-user-select: none;-ms-user-select: none; 
-    user-select: none;
-    pointer-events: none;
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+	pointer-events: none;
 }
 
 .selectable {
-    -webkit-user-select: auto;-moz-user-select: auto;-ms-user-select: auto; 
-    user-select: auto;
-    pointer-events: auto;
+	-webkit-user-select: auto;
+	-moz-user-select: auto;
+	-ms-user-select: auto;
+	user-select: auto;
+	pointer-events: auto;
 }
 
 #goto-main {
-    text-decoration: none;
+	text-decoration: none;
 }
 
 .overlay-content {
-    z-index: 1; 
-    position: absolute; 
+	z-index: 1;
+	position: absolute;
 }
 
 .hero-content {
-    color:white;
-    min-height: 70vh;
+	color: white;
+	min-height: 70vh;
 }
 
 .hero-content p {
-    font-size: 1.5em;
-    text-align: center;
+	font-size: 1.5em;
+	text-align: center;
 }
 
 .hero-content h1 {
-    font-size: 3rem;
-    text-align: center;
-    display: table-cell;
-    vertical-align: middle;
+	font-size: 3rem;
+	text-align: center;
+	display: table-cell;
+	vertical-align: middle;
 }
 
 /* Bootstrap 4 USYD button */
 .btn-usyd {
-    color: #FFFFFF;
-    background-color: var(--usyd-orange-colour);
-    border-color: var(--usyd-orange-colour);
+	color: #ffffff;
+	background-color: var(--usyd-orange-colour);
+	border-color: var(--usyd-orange-colour);
 }
 
 .btn-usyd:hover {
-    color: #FFFFFF;
-    background-color: #d4482c;
-    border-color: #d4482c;
-    text-decoration: none !important;
+	color: #ffffff;
+	background-color: #d4482c;
+	border-color: #d4482c;
+	text-decoration: none !important;
 }
 
 .btn-usyd:active {
-    border: none !important;
+	border: none !important;
 }
 
-/*Scroll magic */
-.parallax-parent {
-    height: 100vh;
-    overflow: hidden;
+/* Progress Bar */
+div#progress {
+	position: fixed;
+	bottom: 0;
+	width: 0%;
+	height: 0.5rem;
+	background-color: #e64626;
 }
 
-.parallax-parent > div {
-    height: 200%;
-    position: relative;
-    top: -100%;
-}
-
-.parallax-parent div > h1 {
-    z-index: 10;
+/* Pagination */
+div#step-1 {
+	width: 100%;
+	height: 100%;
+	vertical-align: middle;
 }
