@@ -10,7 +10,6 @@ function handleEntranceVideo() {
     heroText.fadeIn(2000);
   });
 }
-
 // main - DOM ready function.
 $(document).ready(function() {
   handleEntranceVideo();
